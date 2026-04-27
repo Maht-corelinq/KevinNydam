@@ -102,7 +102,7 @@ export default function ConsultationModal({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.3, ease: [0.19, 1, 0.22, 1] }}
-            className="relative bg-white rounded-lg p-8 max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+            className="relative bg-white rounded-lg p-8 max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
           >
             <button
               onClick={onClose}
@@ -123,8 +123,28 @@ export default function ConsultationModal({
               <>
                 <h2 className="font-heading text-2xl text-navy mb-2">Schedule a Consultation</h2>
                 <p className="text-charcoal/60 text-sm mb-6">
-                  Fill out the form below and Kevin will reach out to schedule a time that works for you.
+                  Pick a time on Kevin&apos;s calendar below, or send a note instead.
                 </p>
+
+                {/* Embedded booking calendar (CoreLinq) */}
+                <div className="mb-6 -mx-2 sm:mx-0 border border-stone rounded overflow-hidden bg-white">
+                  <iframe
+                    src="https://corelinq-platform.vercel.app/book/kevin-nydam/consultation"
+                    title="Book a 30-minute consultation with Kevin Nydam"
+                    className="w-full"
+                    style={{ height: 720, border: 0 }}
+                    loading="lazy"
+                  />
+                </div>
+
+                <div className="relative my-6">
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="w-full border-t border-stone" />
+                  </div>
+                  <div className="relative flex justify-center text-xs uppercase tracking-wide">
+                    <span className="bg-white px-3 text-charcoal/50">or send a note instead</span>
+                  </div>
+                </div>
 
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">

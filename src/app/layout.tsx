@@ -3,7 +3,7 @@ import { cinzel, lato, cormorantGaramond } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kevinnydam.com'),
+  metadataBase: new URL('https://nydamhomes.com'),
   title: "Kevin Nydam | Denver Real Estate | Compass Broker Associate",
   description: "Kevin Nydam is a trusted Compass Broker Associate in Denver, CO. Whether buying or selling, Kevin delivers expert guidance, market knowledge, and a personal touch to every transaction.",
   keywords: ['Denver real estate', 'Denver realtor', 'Compass broker', 'Denver homes for sale', 'sell my home Denver', 'Kevin Nydam', 'Colorado real estate agent'],
@@ -36,7 +36,7 @@ const realEstateAgentJsonLd = {
     name: 'Compass',
     url: 'https://www.compass.com',
   },
-  url: 'https://kevinnydam.com',
+  url: 'https://nydamhomes.com',
   telephone: '+1-303-900-2018',
   email: 'kevin.nydam@compass.com',
   address: {
