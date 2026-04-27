@@ -37,7 +37,7 @@ const realEstateAgentJsonLd = {
     url: 'https://www.compass.com',
   },
   url: 'https://nydamhomes.com',
-  telephone: '+1-303-900-2018',
+  telephone: '+1-978-648-3237',
   email: 'kevin.nydam@compass.com',
   address: {
     '@type': 'PostalAddress',

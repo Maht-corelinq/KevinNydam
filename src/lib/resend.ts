@@ -83,7 +83,7 @@ export async function sendLeadNotification(data: LeadNotification) {
           <p style="color: #3D3D3D; line-height: 1.6;">Thank you for reaching out! I received your ${data.leadType === 'valuation' ? 'home valuation request' : 'message'} and will be in touch within 24 hours.</p>
           <p style="color: #3D3D3D; line-height: 1.6;">In the meantime, feel free to reach me directly:</p>
           <ul style="color: #3D3D3D; line-height: 1.8;">
-            <li>Phone: <a href="tel:+13039002018">(303) 900-2018</a></li>
+            <li>Phone: <a href="tel:+19786483237">(978) 648-3237</a></li>
             <li>Email: <a href="mailto:kevin.nydam@compass.com">kevin.nydam@compass.com</a></li>
           </ul>
           <p style="color: #3D3D3D; line-height: 1.6;">Looking forward to connecting!</p>
