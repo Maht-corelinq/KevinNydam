@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { cinzel, lato, cormorantGaramond } from "@/lib/fonts";
 import "./globals.css";
 
@@ -69,7 +70,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(realEstateAgentJsonLd) }}
         />
       </head>
-      <body className="overflow-x-hidden">{children}</body>
+      <body className="overflow-x-hidden">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
